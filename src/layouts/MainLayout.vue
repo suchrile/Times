@@ -72,6 +72,6 @@ body[layout='main'] {
   }
 }
 .mobile {
-  padding: 0 rem(15);
+  padding: 0 rem(15) rem(70);
 }
 </style>
