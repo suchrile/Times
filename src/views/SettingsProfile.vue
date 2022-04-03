@@ -1,5 +1,5 @@
 <template>
-  <div class="settings-profile">
+  <section class="settings-profile">
     <div class="settings-profile__avatar">
       <div class="settings-profile__avatar-preview">
         <img :src="userData.avatar" alt="" />
@@ -23,7 +23,7 @@
     />
     <base-note text="Укажите свое имя и фамилию." />
     <base-button text="SETTINGS_PROFILE_LOGOUT" @click.prevent="logout" />
-  </div>
+  </section>
 </template>
 
 <script>

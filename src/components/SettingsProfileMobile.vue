@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .settings-profile {
   border-radius: rem(12);
   background-color: #fff;
