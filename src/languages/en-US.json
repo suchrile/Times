@@ -1,0 +1,45 @@
+{
+  "G_APP_CURRENT_LANGUAGE_NAME": "English",
+
+  "G_APP_REVIEW": "Review",
+  "G_APP_TODAY": "Today",
+  "G_APP_CALENDAR": "Calendar",
+  "G_APP_ALL_TASKS": "All Tasks",
+  "G_APP_SETTINGS": "Settings",
+  "G_APP_PROFILE": "Profile",
+  "G_APP_APPEARANCE": "Appearance",
+  "G_APP_LANGUAGE": "Language",
+  "G_APP_BACK": "Back",
+
+  "G_APP_RUSSIAN": "Русский",
+  "G_APP_ENGLISH": "English",
+
+  "AUTH_TAB_LOGIN": "Login",
+  "AUTH_TAB_SIGNUP": "Signup",
+
+  "AUTH_FORM_FIRSTNAME": "First name",
+  "AUTH_FORM_LASTNAME": "Last name",
+  "AUTH_FORM_EMAIL": "E-mail",
+  "AUTH_FORM_PASSWORD": "Password",
+  "AUTH_FORM_CONFIRM_PASSWORD": "Confirm password",
+  "AUTH_FORM_AGREEMENT": "I agree with the personal data processing policy.",
+  "AUTH_FORM_BUTTON_CONTINUE": "Continue",
+  "AUTH_FORM_FORGOT_PASSWORD": "Forgot your password?",
+
+  "SETTINGS_BOARDS": "Boards",
+  "SETTINGS_TODO_LISTS": "Todo Lists",
+  "SETTINGS_APPEARANCE": "Appearance",
+  "SETTINGS_LANGUAGE": "Language",
+  "SETTINGS_SUPPORT": "Support",
+  "SETTINGS_TIMES_FEATURES": "Times Features",
+  "SETTINGS_REPORT_A_BUG": "Report a Bug",
+
+  "SETTINGS_PROFILE_LOGOUT": "Log out",
+
+  "SETTINGS_LANGUAGE_APP_LANGUAGE": "App Language",
+
+  "SETTINGS_APPEARANCE_APP_THEME": "App Theme",
+  "SETTINGS_APPEARANCE_DEVICE": "Device",
+  "SETTINGS_APPEARANCE_LIGHT": "Light",
+  "SETTINGS_APPEARANCE_DARK": "Dark"
+}

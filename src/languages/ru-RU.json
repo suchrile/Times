@@ -1,0 +1,45 @@
+{
+  "G_APP_CURRENT_LANGUAGE_NAME": "Русский",
+
+  "G_APP_REVIEW": "Обзор",
+  "G_APP_TODAY": "Сегодня",
+  "G_APP_CALENDAR": "Календарь",
+  "G_APP_ALL_TASKS": "Все задачи",
+  "G_APP_SETTINGS": "Наcтройки",
+  "G_APP_PROFILE": "Профиль",
+  "G_APP_APPEARANCE": "Оформление",
+  "G_APP_LANGUAGE": "Язык",
+  "G_APP_BACK": "Назад",
+
+  "G_APP_RUSSIAN": "Русский",
+  "G_APP_ENGLISH": "English",
+
+  "AUTH_TAB_LOGIN": "Вход",
+  "AUTH_TAB_SIGNUP": "Регистрация",
+
+  "AUTH_FORM_FIRSTNAME": "Имя",
+  "AUTH_FORM_LASTNAME": "Фамилия",
+  "AUTH_FORM_EMAIL": "E-mail",
+  "AUTH_FORM_PASSWORD": "Пароль",
+  "AUTH_FORM_CONFIRM_PASSWORD": "Повторите пароль",
+  "AUTH_FORM_AGREEMENT": "Я согласен с политикой обработки персональных данных.",
+  "AUTH_FORM_BUTTON_CONTINUE": "Продолжить",
+  "AUTH_FORM_FORGOT_PASSWORD": "Забыли пароль?",
+
+  "SETTINGS_BOARDS": "Доски задач",
+  "SETTINGS_TODO_LISTS": "Списки задач",
+  "SETTINGS_APPEARANCE": "Оформление",
+  "SETTINGS_LANGUAGE": "Язык",
+  "SETTINGS_SUPPORT": "Поддержка",
+  "SETTINGS_TIMES_FEATURES": "Возможности Times",
+  "SETTINGS_REPORT_A_BUG": "Сообщить об ошибке",
+
+  "SETTINGS_PROFILE_LOGOUT": "Выйти",
+
+  "SETTINGS_LANGUAGE_APP_LANGUAGE": "Язык приложения",
+
+  "SETTINGS_APPEARANCE_APP_THEME": "Тема приложения",
+  "SETTINGS_APPEARANCE_DEVICE": "Как на устройстве",
+  "SETTINGS_APPEARANCE_LIGHT": "Светлая",
+  "SETTINGS_APPEARANCE_DARK": "Тёмная"
+}
