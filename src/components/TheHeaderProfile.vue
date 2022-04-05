@@ -2,7 +2,7 @@
   <div class="header__profile-wrapper">
     <button class="header__profile" :class="{ opened }" @click.stop="toggle">
       <div class="header__profile-avatar">
-        <img src="@/assets/avatar.jpg" alt="" />
+        <img :src="userData.avatar" alt="" />
       </div>
       <span class="header__profile-username">Артем</span>
       <base-chevron
@@ -35,6 +35,11 @@ export default {
   data: () => ({
     opened: false,
   }),
+  computed: {
+    userData() {
+      return this.$store.getters.userData
+    },
+  },
   methods: {
     toggle() {
       this.opened = !this.opened

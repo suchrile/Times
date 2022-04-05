@@ -10,6 +10,8 @@ export default {
       const user = getAuth().currentUser
       state.userData = userData
       state.userData.avatar = user.photoURL
+      state.userData.memoji = require(`@/assets/memoji/memoji_48.png`)
+      // require(`@/assets/memoji/memoji_${Math.floor(Math.random() * 83) + 1}.png`)
       state.userData.fullname = user.displayName
       state.userData.email = user.email
       state.userData.emailVerified = user.emailVerified

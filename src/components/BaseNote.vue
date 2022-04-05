@@ -1,5 +1,5 @@
 <template>
-  <span class="note">{{ text }}</span>
+  <span class="note">{{ $filters.lang(text) }}</span>
 </template>
 
 <script>

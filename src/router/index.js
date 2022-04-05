@@ -23,37 +23,37 @@ const routes = [
   {
     path: '/calendar',
     name: 'G_APP_CALENDAR',
-    meta: { auth: true, layout: 'main', largetitle: true },
+    meta: { auth: true, layout: 'main', largeheader: true },
     component: () => import('@/views/Calendar.vue'),
   },
   {
     path: '/tasks',
     name: 'G_APP_ALL_TASKS',
-    meta: { auth: true, layout: 'main', largetitle: true },
+    meta: { auth: true, layout: 'main', largeheader: true },
     component: () => import('@/views/Tasks.vue'),
   },
   {
     path: '/settings',
     name: 'G_APP_SETTINGS',
-    meta: { auth: true, layout: 'main', largetitle: true },
+    meta: { auth: true, layout: 'main', largeheader: true },
     component: () => import('@/views/Settings.vue'),
   },
   {
     path: '/settings/profile',
     name: 'G_APP_PROFILE',
-    meta: { auth: true, layout: 'main', largetitle: false },
+    meta: { auth: true, layout: 'main', largeheader: false },
     component: () => import('@/views/SettingsProfile.vue'),
   },
   {
     path: '/settings/appearance',
     name: 'G_APP_APPEARANCE',
-    meta: { auth: true, layout: 'main', largetitle: false },
+    meta: { auth: true, layout: 'main', largeheader: false },
     component: () => import('@/views/SettingsAppearance.vue'),
   },
   {
     path: '/settings/language',
     name: 'G_APP_LANGUAGE',
-    meta: { auth: true, layout: 'main', largetitle: false },
+    meta: { auth: true, layout: 'main', largeheader: false },
     component: () => import('@/views/SettingsLanguage.vue'),
   },
 ]

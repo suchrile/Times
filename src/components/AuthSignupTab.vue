@@ -35,8 +35,11 @@
     <base-button
       type="submit"
       text="AUTH_FORM_BUTTON_CONTINUE"
-      :disabled="!agreement"
+      view="filled"
+      size="full"
       class="auth__form-btn"
+      :disabled="!agreement"
+      :loading="buttonLoading"
       @click.prevent="submitHandler"
     />
   </form>
@@ -60,12 +63,14 @@ export default {
     password: null,
     confirmPassword: null,
     agreement: false,
+    buttonLoading: false,
   }),
   methods: {
     agreementHandler(value) {
       this.agreement = value
     },
     async submitHandler() {
+      this.buttonLoading = true
       const userData = {
         firstname: this.firstname,
         lastname: this.lastname,
@@ -75,7 +80,9 @@ export default {
       try {
         await this.$store.dispatch('signup', userData)
         this.$router.push('/')
-      } catch (e) {}
+      } catch (e) {
+        this.buttonLoading = false
+      }
     },
   },
 }

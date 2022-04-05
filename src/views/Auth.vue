@@ -52,7 +52,6 @@ export default {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  background-color: #fff;
   position: relative;
 
   &__content {
@@ -105,6 +104,12 @@ export default {
         visibility: visible;
         transform: scale(1);
       }
+    }
+  }
+
+  body[theme='dark'] & {
+    &__tab::after {
+      background-color: $darkblue;
     }
   }
 }

@@ -13,15 +13,16 @@ body[layout='auth'] {
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &[theme='dark'] {
-    background-color: $AppBackgroundColorDark;
+    // background-color: $AppBackgroundColorDark;
     color: $AppTextColorLight;
+    background-color: #000;
   }
 
-  @media (prefers-color-scheme: dark) {
-    &[theme='device'] {
-      background-color: $AppBackgroundColorDark;
-      color: $AppTextColorLight;
-    }
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   &[theme='device'] {
+  //     background-color: $AppBackgroundColorDark;
+  //     color: $AppTextColorLight;
+  //   }
+  // }
 }
 </style>

@@ -119,5 +119,22 @@ export default {
       background-color: #e5e5e5;
     }
   }
+
+  body[theme='dark'] & {
+    &__wrapper {
+      background-color: $AppBackgroundColorDark;
+    }
+    &__item {
+      &-selected {
+        fill: $darkblue;
+      }
+      &:not(:last-child):after {
+        background-color: #2d2d30;
+      }
+      &:active {
+        background-color: #2d2d30;
+      }
+    }
+  }
 }
 </style>

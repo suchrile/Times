@@ -2,12 +2,13 @@
   <header class="header-mobile">
     <div class="header-mobile__content">
       <div class="header-mobile__back">
-        <button class="header-mobile__back-content" @click="returnBack">
-          <base-icon name="chevron-left-regular" size="22" />
-          <span class="header-mobile__back-title">
-            {{ $filters.lang('G_APP_BACK') }}
-          </span>
-        </button>
+        <base-button
+          text="G_APP_BACK"
+          view="plain"
+          size="large"
+          icon="chevron-left-regular"
+          @click="returnBack"
+        />
       </div>
       <span class="header-mobile__title">
         {{ $filters.lang(this.$route.name) }}
@@ -19,10 +20,12 @@
 
 <script>
 import BaseIcon from '@/components/BaseIcon.vue'
+import BaseButton from './BaseButton.vue'
 
 export default {
   components: {
     BaseIcon,
+    BaseButton,
   },
   data: () => ({
     currRoute: null,
@@ -46,6 +49,7 @@ export default {
 <style lang="scss" scoped>
 .header-mobile {
   height: rem(44);
+  user-select: none;
   z-index: 90;
 
   &__content {
@@ -58,39 +62,14 @@ export default {
     padding: 0 rem(15);
     text-align: center;
     background-color: $AppBackgroundColorLight;
+    transition: background-color 0.2s ease-in-out;
     position: fixed;
     z-index: 1;
   }
 
   &__back {
     display: flex;
-    align-items: center;
     height: 100%;
-
-    &-content {
-      display: flex;
-      align-items: center;
-      height: 100%;
-      color: $blue;
-      fill: $blue;
-      border: none;
-      background: none;
-      -webkit-tap-highlight-color: transparent;
-      overflow: hidden;
-      cursor: pointer;
-
-      &:active {
-        opacity: 0.6;
-      }
-    }
-
-    &-title {
-      margin-left: rem(5);
-      font-size: rem(18);
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
   }
 
   &__title {
@@ -101,6 +80,12 @@ export default {
   }
 
   &__actions {
+  }
+
+  body[theme='dark'] & {
+    &__content {
+      background-color: #000;
+    }
   }
 }
 </style>

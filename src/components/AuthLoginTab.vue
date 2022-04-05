@@ -15,7 +15,10 @@
     <base-button
       type="submit"
       text="AUTH_FORM_BUTTON_CONTINUE"
+      view="filled"
+      size="full"
       class="auth__form-btn"
+      :loading="buttonLoading"
       @click.prevent="submitHandler"
     />
     <router-link to="#" class="auth__form-forgot-password">
@@ -36,9 +39,11 @@ export default {
   data: () => ({
     email: null,
     password: null,
+    buttonLoading: false,
   }),
   methods: {
     async submitHandler() {
+      this.buttonLoading = true
       const userData = {
         email: this.email,
         password: this.password,
@@ -46,7 +51,9 @@ export default {
       try {
         await this.$store.dispatch('login', userData)
         this.$router.push(this.$route.query.to || '/')
-      } catch (e) {}
+      } catch (e) {
+        this.buttonLoading = false
+      }
     },
   },
 }
@@ -67,6 +74,12 @@ export default {
     margin-top: rem(25);
     text-align: center;
     color: $blue;
+  }
+
+  body[theme='dark'] & {
+    &-forgot-password {
+      color: $darkblue;
+    }
   }
 }
 </style>

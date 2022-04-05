@@ -7,7 +7,7 @@
         :multiple="multiple"
         @change="upload"
       />
-      {{ text }}
+      {{ $filters.lang(text) }}
     </label>
   </div>
 </template>

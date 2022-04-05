@@ -89,6 +89,7 @@ export default {
 <style lang="scss">
 .settings-list {
   margin-top: rem(15);
+  user-select: none;
 
   &__section {
     border-radius: rem(12);
@@ -121,7 +122,6 @@ export default {
     align-items: center;
     width: 100%;
     padding: rem(7) rem(15) rem(7) rem(12);
-    color: $black;
 
     &:active {
       background-color: #e5e5e5;
@@ -149,6 +149,21 @@ export default {
     line-height: 1;
     opacity: 0.5;
     position: absolute;
+  }
+
+  body[theme='dark'] & {
+    &__section {
+      background-color: $AppBackgroundColorDark;
+    }
+    &__item:not(:last-child):after {
+      background-color: #2d2d2f;
+    }
+    &__item-content {
+      color: $AppTextColorLight;
+      &:active {
+        background-color: #2d2d2f;
+      }
+    }
   }
 }
 

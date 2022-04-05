@@ -10,6 +10,7 @@
   "G_APP_APPEARANCE": "Оформление",
   "G_APP_LANGUAGE": "Язык",
   "G_APP_BACK": "Назад",
+  "G_APP_CANCEL": "Отменить",
 
   "G_APP_RUSSIAN": "Русский",
   "G_APP_ENGLISH": "English",
@@ -34,6 +35,12 @@
   "SETTINGS_TIMES_FEATURES": "Возможности Times",
   "SETTINGS_REPORT_A_BUG": "Сообщить об ошибке",
 
+  "SETTINGS_PROFILE_CHANGE_AVATAR": "Новое фото",
+  "SETTINGS_PROFILE_CHOOSE_MEMOJI": "Выбрать Memoji",
+  "SETTINGS_PROFILE_DELETE_AVATAR": "Удалить",
+  "SETTINGS_PROFILE_FIRSTNAME": "Имя",
+  "SETTINGS_PROFILE_LASTNAME": "Фамилия",
+  "SETTINGS_PROFILE_NAME_NOTE": "Укажите свое имя и фамилию.",
   "SETTINGS_PROFILE_LOGOUT": "Выйти",
 
   "SETTINGS_LANGUAGE_APP_LANGUAGE": "Язык приложения",

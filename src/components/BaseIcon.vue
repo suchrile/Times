@@ -30,6 +30,9 @@ export default {
 
 <style lang="scss" scoped>
 i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   line-height: 1;
 }
 </style>

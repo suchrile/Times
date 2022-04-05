@@ -35,6 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 .header-mobile {
+  user-select: none;
   z-index: 90;
 
   &.small {
@@ -74,6 +75,12 @@ export default {
     font-size: rem(30);
     font-weight: 700;
     transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  }
+
+  body[theme='dark'] & {
+    &__small {
+      background-color: #000;
+    }
   }
 }
 </style>

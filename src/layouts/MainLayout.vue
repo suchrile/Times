@@ -4,7 +4,9 @@
   <main :class="{ mobile: isMobile }">
     <router-view />
   </main>
-  <the-footer v-if="isMobile" />
+  <transition name="footer-fade">
+    <the-footer v-if="isMobile" v-show="footerShown" />
+  </transition>
 </template>
 
 <script>
@@ -21,7 +23,7 @@ export default {
     TheFooter,
   },
   data: () => ({
-    isMobile: false,
+    isMobile: null,
   }),
   async mounted() {
     this.resizeHandler()
@@ -35,10 +37,15 @@ export default {
   },
   computed: {
     headerMobileView() {
-      if (this.$route.meta.largetitle) {
+      if (this.$route.meta.largeheader) {
         return 'the-header-mobile-large'
       }
       return 'the-header-mobile-small'
+    },
+    footerShown() {
+      if (this.$route.meta.largeheader) {
+        return true
+      }
     },
   },
   methods: {
@@ -60,18 +67,23 @@ body[layout='main'] {
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &[theme='dark'] {
-    background-color: $AppBackgroundColorDark;
+    background-color: #000;
+    // background-color: $AppBackgroundColorDark;
     color: $AppTextColorLight;
   }
-
-  @media (prefers-color-scheme: dark) {
-    &[theme='device'] {
-      background-color: $AppBackgroundColorDark;
-      color: $AppTextColorLight;
-    }
-  }
 }
+
 .mobile {
   padding: 0 rem(15) rem(70);
+}
+
+.footer-fade-enter-active,
+.footer-fade-leave-active {
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-fade-enter-from,
+.footer-fade-leave-to {
+  transform: translateY(100%);
 }
 </style>

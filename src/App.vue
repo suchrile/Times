@@ -39,12 +39,25 @@ export default {
     if (!localStorage.getItem('theme')) {
       localStorage.setItem('theme', 'device')
     }
-    document.body.setAttribute('theme', localStorage.getItem('theme'))
+    if (localStorage.getItem('theme') === 'device') {
+      const deviceTheme = window.matchMedia('(prefers-color-scheme: dark)')
+      if (deviceTheme.matches) {
+        document.body.setAttribute('theme', 'dark')
+      } else {
+        document.body.setAttribute('theme', 'light')
+      }
+    } else {
+      document.body.setAttribute('theme', localStorage.getItem('theme'))
+    }
   },
 }
 </script>
 
 <style lang="scss">
+.no-scroll {
+  overflow: hidden;
+  user-select: none;
+}
 .link-in-text {
   text-decoration: underline;
   color: $blue;

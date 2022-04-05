@@ -51,6 +51,7 @@ export default {
   bottom: 0;
   width: 100%;
   background-color: $AppBackgroundColorDark;
+  z-index: 90;
 
   &__content {
     display: flex;

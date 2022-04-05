@@ -10,6 +10,7 @@
   "G_APP_APPEARANCE": "Appearance",
   "G_APP_LANGUAGE": "Language",
   "G_APP_BACK": "Back",
+  "G_APP_CANCEL": "Cancel",
 
   "G_APP_RUSSIAN": "Русский",
   "G_APP_ENGLISH": "English",
@@ -34,6 +35,12 @@
   "SETTINGS_TIMES_FEATURES": "Times Features",
   "SETTINGS_REPORT_A_BUG": "Report a Bug",
 
+  "SETTINGS_PROFILE_CHANGE_AVATAR": "Set New Photo",
+  "SETTINGS_PROFILE_CHOOSE_MEMOJI": "Choose Memoji",
+  "SETTINGS_PROFILE_DELETE_AVATAR": "Delete",
+  "SETTINGS_PROFILE_FIRSTNAME": "First name",
+  "SETTINGS_PROFILE_LASTNAME": "Last name",
+  "SETTINGS_PROFILE_NAME_NOTE": "Enter your first and last name.",
   "SETTINGS_PROFILE_LOGOUT": "Log out",
 
   "SETTINGS_LANGUAGE_APP_LANGUAGE": "App Language",

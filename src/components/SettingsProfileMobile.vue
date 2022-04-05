@@ -6,7 +6,7 @@
       class="settings-profile__content"
     >
       <div class="settings-profile__avatar">
-        <img :src="userData.avatar" alt="" />
+        <img :src="userData.avatar || userData.memoji" />
       </div>
       <div class="settings-profile__info">
         <span class="settings-profile__name">{{ userData.fullname }}</span>
@@ -83,6 +83,13 @@ export default {
     line-height: 1;
     opacity: 0.5;
     margin-top: rem(6);
+  }
+
+  body[theme='dark'] & {
+    background-color: $AppBackgroundColorDark;
+    &__content {
+      color: $AppTextColorLight;
+    }
   }
 }
 </style>

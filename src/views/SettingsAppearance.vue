@@ -27,7 +27,16 @@ export default {
   }),
   methods: {
     changeTheme(theme) {
-      document.body.setAttribute('theme', theme.value)
+      if (theme.value === 'device') {
+        const deviceTheme = window.matchMedia('(prefers-color-scheme: dark)')
+        if (deviceTheme.matches) {
+          document.body.setAttribute('theme', 'dark')
+        } else {
+          document.body.setAttribute('theme', 'light')
+        }
+      } else {
+        document.body.setAttribute('theme', theme.value)
+      }
       localStorage.setItem('theme', theme.value)
     },
   },

@@ -27,5 +27,11 @@ export default {
     margin-left: auto;
     opacity: 0.3;
   }
+
+  body[theme='dark'] & {
+    &__chevron {
+      fill: $AppTextColorLight;
+    }
+  }
 }
 </style>
